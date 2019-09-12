@@ -54,7 +54,7 @@ return [
     |
     */
 
-    'from' => ['address' => 'hiyik@hiyik.com', 'name' => 'HIYIK'],
+    'from' => ['address' => '', 'name' => ''],
 
     /*
     |--------------------------------------------------------------------------
@@ -80,7 +80,7 @@ return [
     |
     */
 
-    'username' => env('MAIL_USERNAME', 'hiyik@hiyik.com'),
+    'username' => env('MAIL_USERNAME', ''),
 
     /*
     |--------------------------------------------------------------------------
@@ -93,7 +93,7 @@ return [
     |
     */
 
-    'password' => env('MAIL_PASSWORD', 'Iek123456'),
+    'password' => env('MAIL_PASSWORD', ''),
 
     /*
     |--------------------------------------------------------------------------
