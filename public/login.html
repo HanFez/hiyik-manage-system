@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>HIYIK Admin</title><meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="img/favicon.ico" >
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/bootstrap-responsive.min.css" />
+    <link rel="stylesheet" href="css/matrix-login.css" />
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.css" />
+
+</head>
+<body>
+    <div id="login-box" class="login-box">
+    </div>
+</body>
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.json.min.js"></script>
+<script src="js/matrix.login.js"></script>
+<script src="js/prototype.js"></script>
+<script src="js/event.js"></script>
+<script src="js/common.js"></script>
+<script src="js/login.js"></script>
+<!--<script src="translation?trans=login"></script>-->
+<script src="translation?trans=error"></script>
+<script>
+    $(document).ready(function () {
+        ajaxData('get', 'admin/login', parseGetViewLoginCallback);
+    })
+</script>
+
+</html>

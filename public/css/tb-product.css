@@ -1,0 +1,89 @@
+
+.introduction {
+    padding: 10px 10%;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+.introduction .btn-group {
+    position: absolute;
+    margin-left: -35px;
+}
+.introduction .box {
+    width: 100%;
+}
+.introduction.image > .box {
+    border: 1px solid #ccc;
+}
+.introduction.image .box:hover {
+    border-color: #006dcc;
+}
+.introduction.text textarea:hover {
+    border-color: #006dcc;
+}
+
+/*sort list*/
+.sort-list {
+    padding: 20px 20px 10px;
+    list-style: none;
+    /*border: 1px solid #e2e1e1;*/
+    box-sizing: border-box;
+    margin: 0;
+}
+.sort-list li {
+    margin-bottom: 10px;
+    background: #f4f4f4;
+    border-color: #e2e1e1;
+    border-style: solid;
+    border-width: 1px 1px 2px;
+    cursor: move;
+    border-radius: 4px;
+    position: relative;
+}
+.sort-list .reorder-content {
+    padding: 4px 80px 4px 60px;
+    overflow: hidden;
+    width: 100%;
+    left: 0;
+    height: 80px;
+    box-sizing: border-box;
+}
+
+.sort-list li,
+.sort-list .sort-icon {
+    height: 80px;
+    overflow: hidden;
+}
+
+.sort-list img {
+    max-height: 70px;
+    max-width: 100%;
+}
+
+.sort-list .sort-icon {
+    margin: 0;
+    width: 80px;
+    line-height: 80px;
+    font-size: 36px;
+    color: #bdbdbd;
+    text-align: center;
+}
+
+.sort-list .icon-fullscreen {
+    position: relative;
+    width: 50px;
+    border-right: 1px solid #e2e1e1;
+    left: 0;
+}
+
+.sort-list .icon-image,
+.sort-list .icon-font {
+    width: 80px;
+    right: 0;
+}
+
+.sort-list .reorder-content,
+.sort-list .icon-image,
+.sort-list .icon-font {
+    position: absolute;
+}

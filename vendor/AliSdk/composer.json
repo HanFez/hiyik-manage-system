@@ -1,0 +1,14 @@
+{
+  "name": "AliSdk",
+  "autoload": {
+    "psr-4": {
+      "AliSdk\\Constant\\": "constant/",
+      "AliSdk\\Http\\": "http/",
+      "AliSdk\\Util\\": "util/",
+      "AliSdk\\":"./"
+    }
+  },
+  "files": [
+    "AliSdk/Util/Autoloader.php"
+  ]
+}

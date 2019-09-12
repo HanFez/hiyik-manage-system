@@ -1,0 +1,14 @@
+{
+  "name": "taobaosdk/topclient",
+  "autoload": {
+    "psr-4": {
+      "TaoBaoSdk\\Top\\": "top/",
+      "TaoBaoSdk\\Top\\AlidayuRequest\\": "top/request/",
+      "TaoBaoSdk\\Top\\Domain\\": "top/domain/",
+      "TaoBaoSdk\\Aliyun\\": "aliyun/"
+    }
+  },
+  "files": [
+    "TaoBaoSdk/TopSdk.php"
+  ]
+}

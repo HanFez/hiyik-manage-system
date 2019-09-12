@@ -1,0 +1,1 @@
+'.env merge=ours'  add .gitattributesgit commit -m 'chore: Preserve .env during merges' 

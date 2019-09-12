@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>HIYIK 产品管理</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="img/favicon.ico" >
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/bootstrap-responsive.min.css" />
+    <link rel="stylesheet" href="css/colorpicker.css" />
+    <link rel="stylesheet" href="css/datepicker.css">
+    <link rel="stylesheet" href="css/uniform.css">
+    <link rel="stylesheet" href="css/select2.css">
+    <link rel="stylesheet" href="css/fullcalendar.css" />
+    <link rel="stylesheet" href="css/matrix-style.css" />
+    <link rel="stylesheet" href="css/matrix-media.css" />
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.css" />
+    <link rel="stylesheet" href="css/jquery.gritter.css" />
+
+</head>
+<body>
+
+<!--Header-part-->
+<div id="header">
+    <h1><a href="thirdProduct.html">HIYIK Admin</a></h1>
+</div>
+<!--close-Header-part-->
+
+<!--top-Header-menu-->
+<div id="user-nav" class="navbar navbar-inverse">
+</div>
+<!--close-top-Header-menu-->
+<!--start-top-serch-->
+<!--<div id="search">
+  <input type="text" placeholder="搜索..."/>
+  <button type="submit" class="tip-bottom" title="Search"><i class="icon-search icon-white"></i></button>
+</div>-->
+<!--close-top-serch-->
+<!--sidebar-menu-->
+<div id="sidebar">
+    <a href="#" class="visible-phone"><i class="icon icon-home"></i>首页</a>
+    <ul>
+        <li class="active"><a href="thirdProduct.html"><i class="icon icon-home"></i><span>首页</span></a> </li>
+        <li class="submenu">
+            <a href="javascript:void (0);">
+                <i class="icon icon-th-large"></i>
+                <span>产品管理</span>
+                <i class="icon icon-chevron-down menu-icon-right"></i>
+            </a>
+            <ul>
+                <li><a id="tb-product-list" href="javascript:void (0);"><i class="icon icon-caret-right"></i>产品列表</a></li>
+                <li><a id="tb-product-add" href="javascript:void (0);"><i class="icon icon-caret-right"></i>添加产品</a></li>
+                <li class="hide"><a id="tb-product-edit" href="javascript:void (0);"><i class="icon icon-caret-right"></i>修改产品</a></li>
+            </ul>
+        </li>
+        <li class="submenu">
+            <a href="javascript:void (0);">
+                <i class="icon icon-picture"></i>
+                <span>作品管理</span>
+                <i class="icon icon-chevron-down menu-icon-right"></i>
+            </a>
+            <ul>
+                <li><a id="tb-publication-list" href="javascript:void (0);"><i class="icon icon-caret-right"></i>作品列表</a></li>
+                <li><a id="tb-publication-add" href="javascript:void (0);"><i class="icon icon-caret-right"></i>添加作品</a></li>
+                <li class="hide"><a id="tb-publication-edit" href="javascript:void (0);"><i class="icon icon-caret-right"></i>修改作品</a></li>
+            </ul>
+        </li>
+        <li class="submenu">
+            <a href="javascript:void (0);">
+                <i class="icon icon-group"></i>
+                <span>作者管理</span>
+                <i class="icon icon-chevron-down menu-icon-right"></i>
+            </a>
+            <ul>
+                <li><a id="tb-author-list" href="javascript:void (0);"><i class="icon icon-caret-right"></i>作者列表</a></li>
+                <li><a id="tb-author-add" href="javascript:void (0);"><i class="icon icon-caret-right"></i>添加作者</a></li>
+                <li class="hide"><a id="tb-author-edit" href="javascript:void (0);"><i class="icon icon-caret-right"></i>修改作者</a></li>
+            </ul>
+        </li>
+        <li class="submenu">
+            <a href="javascript:void (0);">
+                <i class="icon icon-facetime-video"></i>
+                <span>珍藏处管理</span>
+                <i class="icon icon-chevron-down menu-icon-right"></i>
+            </a>
+            <ul>
+                <li><a id="tb-museum-list" href="javascript:void (0);"><i class="icon icon-caret-right"></i>珍藏处列表</a></li>
+                <li><a id="tb-museum-add" href="javascript:void (0);"><i class="icon icon-caret-right"></i>添加珍藏处</a></li>
+                <li class="hide"><a id="tb-museum-edit" href="javascript:void (0);"><i class="icon icon-caret-right"></i>修改珍藏处</a></li>
+            </ul>
+        </li>
+        <li class="submenu">
+            <a href="javascript:void (0);">
+                <i class="icon icon-sitemap"></i>
+                <span>店铺管理</span>
+                <i class="icon icon-chevron-down menu-icon-right"></i>
+            </a>
+            <ul>
+                <li><a id="tb-shop-list" href="javascript:void (0);"><i class="icon icon-caret-right"></i>店铺列表</a></li>
+                <li><a id="tb-shop-add" href="javascript:void (0);"><i class="icon icon-caret-right"></i>添加店铺</a></li>
+                <li class="hide"><a id="tb-shop-edit" href="javascript:void (0);"><i class="icon icon-caret-right"></i>修改店铺</a></li>
+            </ul>
+        </li>
+        <li class="submenu">
+            <a href="javascript:void (0);">
+                <i class="icon icon-book"></i>
+                <span>介绍管理</span>
+                <i class="icon icon-chevron-down menu-icon-right"></i>
+            </a>
+            <ul>
+                <li><a id="tb-introduction-list" href="javascript:void (0);"><i class="icon icon-caret-right"></i>介绍列表</a></li>
+                <li><a id="tb-introduction-add" href="javascript:void (0);"><i class="icon icon-caret-right"></i>添加介绍</a></li>
+                <li class="hide"><a id="tb-introduction-edit" href="javascript:void (0);"><i class="icon icon-caret-right"></i>修改介绍</a></li>
+            </ul>
+        </li>
+        <li class="submenu">
+            <a href="javascript:void (0);">
+                <i class="icon icon-dashboard"></i>
+                <span>生产管理</span>
+                <i class="icon icon-chevron-down menu-icon-right"></i>
+            </a>
+            <ul>
+                <li><a id="tb-real-product-list" href="javascript:void (0);"><i class="icon icon-caret-right"></i>生产列表</a></li>
+                <li><a id="tb-real-product-add" href="javascript:void (0);"><i class="icon icon-caret-right"></i>添加生产</a></li>
+                <li class="hide"><a id="tb-real-product-edit" href="javascript:void (0);"><i class="icon icon-caret-right"></i>修改生产</a></li>
+            </ul>
+        </li>
+        <li class="submenu">
+            <a href="javascript:void (0);">
+                <i class="icon icon-search"></i>
+                <span>信息查询</span>
+                <i class="icon icon-chevron-down menu-icon-right"></i>
+            </a>
+            <ul>
+                <li><a id="tb-real-product-no" href="javascript:void (0);"><i class="icon icon-caret-right"></i>产品信息查询</a></li>
+                <li><a id="tb-order-no" href="javascript:void (0);"><i class="icon icon-caret-right"></i>订单信息查询</a></li>
+            </ul>
+        </li>
+    </ul>
+</div>
+<!--sidebar-menu-->
+<!--loading-box-->
+<div id="loading-box" class="loading-box" style="display: none;">
+    <div>
+        <img src="img/loading@2x.gif" alt="loading...">
+    </div>
+</div>
+<!--loading-box-->
+<!--main-container-part-->
+<div id="content">
+    <!--breadcrumbs-->
+    <div id="content-header">
+        <div id="breadcrumb"> <a href="thirdProduct.html" title="" class="tip-bottom"><i class="icon-home"></i> <span></span></a></div>
+    </div>
+    <!--End-breadcrumbs-->
+
+    <!--Action boxes-->
+    <div id="container" class="container-fluid">
+    </div>
+</div>
+
+<!--end-main-container-part-->
+
+<!--Footer-part-->
+
+<div class="row-fluid">
+    <div id="footer" class="span12"> Copyright 2016. &copy; <a>H I Y I K Co.Ltd.</a> All rights reserved. 蜀ICP备16020058 号 </div>
+</div>
+
+<!--end-Footer-part-->
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.json.min.js"></script>
+<script src="js/jquery.ui.custom.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/bootstrap-datepicker.js"></script>
+<script src="js/bootstrapQ.js"></script>
+<!--<script src="js/jquery.flot.min.js"></script>-->
+<!--<script src="js/jquery.flot.resize.min.js"></script> -->
+<script src="js/jquery.peity.min.js"></script>
+<script src="js/jquery.gritter.min.js"></script>
+<script src="js/jquery.validate.js"></script>
+<script src="js/jquery.wizard.js"></script>
+<script src="js/jquery.uniform.js"></script>
+<script src="js/jquery.dataTables.js"></script>
+<script src="js/jquery.nicescroll.min.js"></script>
+<script src="js/excanvas.min.js"></script>
+<script src="js/fullcalendar.min.js"></script>
+<script src="js/select2.min.js"></script>
+<script src="js/adminCommon.js"></script>
+<script src="js/thirdProduct.js"></script>
+<script src="js/prototype.js"></script>
+<script src="js/common.js"></script>
+<script src="js/errors.js"></script>
+<script src="js/event.js"></script>
+<script src="ckEditor/ckEditor.js"></script>
+<script src="ckEditor/myEditor.js"></script>
+<script src="js/uploadFile.js"></script>
+<script src="translation?trans=error"></script>
+<script src="translation?trans=admin"></script>
+<script src="translation?trans=table"></script>
+<script src="js/bootstrap-colorpicker.js"></script>
+
+</body>
+</html>

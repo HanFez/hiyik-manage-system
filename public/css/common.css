@@ -1,0 +1,9 @@
+.control-group.error .control-label, .control-group.error .help-block, .control-group.error .help-inline {
+    color: #F74D4D;
+}
+
+.message-error {
+    width: 100%;
+    text-align: center;
+    color: #F74D4D;
+}
